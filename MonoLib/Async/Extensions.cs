@@ -45,7 +45,7 @@ namespace MonoLib.Async
 			return FromAsync (req.BeginGetResponse, req.EndGetResponse);
 		}
 
-		public static Task<byte[]> DownloadDataAsync2 (this WebClient wc, Uri address)
+		public static Task<byte[]> DownloadDataTaskAsync (this WebClient wc, Uri address)
 		{
 			var token = new object ();
 			var task = new TaskCompletionSource<byte[]> ();
@@ -62,7 +62,7 @@ namespace MonoLib.Async
 			return task.Task;
 		}
 
-		public static Task<string> DownloadStringAsync2 (this WebClient wc, Uri address)
+		public static Task<string> DownloadStringTaskAsync (this WebClient wc, Uri address)
 		{
 			var token = new object ();
 			var task = new TaskCompletionSource<string> ();

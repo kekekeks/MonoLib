@@ -40,7 +40,7 @@ namespace Demo
 
 			try
 			{
-				txtResult.Text = await wc.DownloadStringAsync2 (uri);
+				txtResult.Text = await wc.DownloadStringTaskAsync (uri);
 			}
 			catch (Exception e)
 			{
