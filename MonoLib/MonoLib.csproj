@@ -18,15 +18,14 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG; NET_4_0; NET_4_5</DefineConstants>
+    <DefineConstants>TRACE;DEBUG; NET_2_0; NET_4_0; NET_4_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE; NET_4_0; NET_4_5</DefineConstants>
+    <DefineConstants>TRACE; NET_2_0; NET_4_0; NET_4_5</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -138,6 +137,34 @@
     <Compile Include="System\OperationCanceledExceptionExt.cs" />
     <Compile Include="Tuple.cs" />
     <Compile Include="Tuples.cs" />
+    <Compile Include="System.Xml.Linq\Extensions.cs" />
+    <Compile Include="System.Xml.Linq\LoadOptions.cs" />
+    <Compile Include="System.Xml.Linq\ReaderOptions.cs" />
+    <Compile Include="System.Xml.Linq\SaveOptions.cs" />
+    <Compile Include="System.Xml.Linq\XAttribute.cs" />
+    <Compile Include="System.Xml.Linq\XCData.cs" />
+    <Compile Include="System.Xml.Linq\XComment.cs" />
+    <Compile Include="System.Xml.Linq\XContainer.cs" />
+    <Compile Include="System.Xml.Linq\XDeclaration.cs" />
+    <Compile Include="System.Xml.Linq\XDocument.cs" />
+    <Compile Include="System.Xml.Linq\XDocumentType.cs" />
+    <Compile Include="System.Xml.Linq\XElement.cs" />
+    <Compile Include="System.Xml.Linq\XIterators.cs" />
+    <Compile Include="System.Xml.Linq\XName.cs" />
+    <Compile Include="System.Xml.Linq\XNamespace.cs" />
+    <Compile Include="System.Xml.Linq\XNode.cs" />
+    <Compile Include="System.Xml.Linq\XNodeDocumentOrderComparer.cs" />
+    <Compile Include="System.Xml.Linq\XNodeEqualityComparer.cs" />
+    <Compile Include="System.Xml.Linq\XNodeNavigator.cs" />
+    <Compile Include="System.Xml.Linq\XNodeReader.cs" />
+    <Compile Include="System.Xml.Linq\XNodeWriter.cs" />
+    <Compile Include="System.Xml.Linq\XObject.cs" />
+    <Compile Include="System.Xml.Linq\XObjectChange.cs" />
+    <Compile Include="System.Xml.Linq\XObjectChangeEventArgs.cs" />
+    <Compile Include="System.Xml.Linq\XProcessingInstruction.cs" />
+    <Compile Include="System.Xml.Linq\XStreamingElement.cs" />
+    <Compile Include="System.Xml.Linq\XText.cs" />
+    <Compile Include="System.Xml.Linq\XUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="mlib.snk" />
@@ -151,4 +178,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <Folder Include="System.Xml.Linq\" />
+  </ItemGroup>
 </Project>
