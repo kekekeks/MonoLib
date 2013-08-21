@@ -63,6 +63,34 @@
     <Compile Include="System.Collections\Hashtable.cs" />
     <Compile Include="System.Collections\IStructuralComparable.cs" />
     <Compile Include="System.Collections\IStructuralEquatable.cs" />
+    <Compile Include="System.Linq.Expressions\BinaryExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ConditionalExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ConstantExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ElementInit.cs" />
+    <Compile Include="System.Linq.Expressions\EmitContext.cs" />
+    <Compile Include="System.Linq.Expressions\Expression.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionPrinter.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionTransformer.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionType.cs" />
+    <Compile Include="System.Linq.Expressions\ExpressionVisitor.cs" />
+    <Compile Include="System.Linq.Expressions\Expression_T.cs" />
+    <Compile Include="System.Linq.Expressions\Extensions.cs" />
+    <Compile Include="System.Linq.Expressions\InvocationExpression.cs" />
+    <Compile Include="System.Linq.Expressions\LambdaExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ListInitExpression.cs" />
+    <Compile Include="System.Linq.Expressions\MemberAssignment.cs" />
+    <Compile Include="System.Linq.Expressions\MemberBinding.cs" />
+    <Compile Include="System.Linq.Expressions\MemberBindingType.cs" />
+    <Compile Include="System.Linq.Expressions\MemberExpression.cs" />
+    <Compile Include="System.Linq.Expressions\MemberInitExpression.cs" />
+    <Compile Include="System.Linq.Expressions\MemberListBinding.cs" />
+    <Compile Include="System.Linq.Expressions\MemberMemberBinding.cs" />
+    <Compile Include="System.Linq.Expressions\MethodCallExpression.cs" />
+    <Compile Include="System.Linq.Expressions\NewArrayExpression.cs" />
+    <Compile Include="System.Linq.Expressions\NewExpression.cs" />
+    <Compile Include="System.Linq.Expressions\ParameterExpression.cs" />
+    <Compile Include="System.Linq.Expressions\TypeBinaryExpression.cs" />
+    <Compile Include="System.Linq.Expressions\UnaryExpression.cs" />
     <Compile Include="System.Linq\Check.cs" />
     <Compile Include="System.Linq\Enumerable.cs" />
     <Compile Include="System.Linq\Grouping.cs" />
@@ -82,11 +110,14 @@
     <Compile Include="System.Runtime.CompilerServices\AsyncVoidMethodBuilder.cs" />
     <Compile Include="System.Runtime.CompilerServices\ConfiguredTaskAwaitable.cs" />
     <Compile Include="System.Runtime.CompilerServices\ConfiguredTaskAwaitable_T.cs" />
+    <Compile Include="System.Runtime.CompilerServices\ExecutionScope.cs" />
     <Compile Include="System.Runtime.CompilerServices\ExtensionAttribute.cs" />
     <Compile Include="System.Runtime.CompilerServices\IAsyncStateMachine.cs" />
     <Compile Include="System.Runtime.CompilerServices\ICriticalNotifyCompletion.cs" />
     <Compile Include="System.Runtime.CompilerServices\INotifyCompletion.cs" />
+    <Compile Include="System.Runtime.CompilerServices\IStrongBox.cs" />
     <Compile Include="System.Runtime.CompilerServices\StateMachineAttribute.cs" />
+    <Compile Include="System.Runtime.CompilerServices\StrongBox_T.cs" />
     <Compile Include="System.Runtime.CompilerServices\TaskAwaiter.cs" />
     <Compile Include="System.Runtime.CompilerServices\TaskAwaiter_T.cs" />
     <Compile Include="System.Runtime.CompilerServices\YieldAwaitable.cs" />
@@ -178,7 +209,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <ItemGroup>
-    <Folder Include="System.Xml.Linq\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
